@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronin Banerjee | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 5px 0 0; font-size: 1.1em; color: #bbb; }
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover { background: #666; }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .project, .experience { margin-bottom: 20px; }
+        .project h3, .experience h3 { margin: 5px 0; }
+        .project a { color: #0066cc; text-decoration: none; }
+        .project a:hover { text-decoration: underline; }
+        ul { padding-left: 20px; }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, I’m [Your Name]</h1>
-    <p>Welcome to my portfolio site!</p>
+    <header>
+        <h1>Ronin Banerjee</h1>
+        <p>Computer Science + Chemistry @ UIUC | Researcher & Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an undergraduate at the University of Illinois Urbana-Champaign pursuing a B.S. in Computer Science + Chemistry with a minor in Electrical & Computer Engineering. My work spans biomedical imaging, robotics, and machine learning, where I integrate computational and engineering approaches to solve real-world problems. Honors include Dean’s List, James Scholar, and Tau Beta Pi.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience">
+            <h3>Chemical Imaging and Structures Laboratory – Beckman Institute</h3>
+            <p><strong>Undergraduate Research Intern</strong> | Jun 2025 – Present</p>
+            <ul>
+                <li>Assemble optical subsystems for spectroscopic microscopes, including beam paths and IR components for Mayo Clinic.</li>
+                <li>Develop control software for automated image capture and spectral processing.</li>
+                <li>Design electronics for microscope automation—PCB layout, microcontroller programming, signal routing.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Rhanor Gillette Lab – University of Illinois</h3>
+            <p><strong>Research Assistant</strong> | Oct 2024 – Apr 2025</p>
+            <ul>
+                <li>Converted biological decision-making models from NetLogo to Python for robotic platform integration.</li>
+                <li>Ran computational experiments simulating neural-driven goal-directed behavior.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Berkeley Pharma Tech – Remote</h3>
+            <p><strong>Medical Research Intern</strong> | Aug 2023 – Dec 2023</p>
+            <ul>
+                <li>Conducted literature reviews on neuroimaging and emerging therapies for addiction.</li>
+                <li>Analyzed trends and presented findings to research scientists.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>ADMtronics – Remote</h3>
+            <p><strong>Medical Device Design Intern</strong> | Jun 2023 – Aug 2023</p>
+            <ul>
+                <li>Developed CAD models in SolidWorks for an electro-wound therapy medical device.</li>
+                <li>Designed a portable, battery-operated control unit integrating scientific modeling techniques.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3>Biogen & Lemelson MIT – Cambridge, MA</h3>
+            <p><strong>Biotech Research Intern</strong> | Aug 2020 – Sep 2020</p>
+            <ul>
+                <li>Participated in CRISPR-based genetic disease research and prototyping under Biogen and MIT scientists.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Autonomous Navigation System for FTC Robot</h3>
+            <p>Developed vision-based path-planning algorithm using odometry, IMU, and PID control. Integrated OpenCV and multi-camera localization for precise autonomous movement.</p>
+        </div>
+
+        <div class="project">
+            <h3>Object Detection for Robotics</h3>
+            <p>Trained a TensorFlow model with custom preprocessing for real-time object detection. Integrated ML model with robotic control systems for adaptive, autonomous gameplay.</p>
+        </div>
+
+        <div class="project">
+            <h3>DNA Splicing Tool</h3>
+            <p>C++ program simulating DNA splicing operations with linked lists and efficient dynamic memory management.</p>
+        </div>
+
+        <div class="project">
+            <h3>Seam Carving Image Resizer</h3>
+            <p>Dynamic programming-based algorithm for content-aware image resizing while preserving important visual features.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:roninb2@illinois.edu">roninb2@illinois.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ronin-banerjee">linkedin.com/in/ronin-banerjee</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Ronin Banerjee. All rights reserved.
+    </footer>
 </body>
 </html>
