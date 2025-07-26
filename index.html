@@ -1,159 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronin Banerjee | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 20px 40px;
-            text-align: center;
-        }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0; font-size: 1.1em; color: #bbb; }
-        nav {
-            background: #444;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: #fff;
-            padding: 10px 15px;
-            text-decoration: none;
-        }
-        nav a:hover { background: #666; }
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        section h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-        .project, .experience { margin-bottom: 20px; }
-        .project h3, .experience h3 { margin: 5px 0; }
-        .project a { color: #0066cc; text-decoration: none; }
-        .project a:hover { text-decoration: underline; }
-        ul { padding-left: 20px; }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: #aaa;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronin Banerjee | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2d5a8e;
+      --secondary: #f9f9fb;
+      --accent: #0066cc;
+      --text-dark: #222;
+      --text-light: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: var(--secondary);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #cdd9ec;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: white;
+      padding: 10px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    p { color: var(--text-light); }
+    ul { padding-left: 20px; color: var(--text-light); }
+    .experience, .project {
+      margin-bottom: 25px;
+    }
+    .experience h3, .project h3 {
+      color: var(--primary);
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+    .experience p, .project p {
+      margin-bottom: 5px;
+    }
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: var(--primary);
+      color: #ddd;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Ronin Banerjee</h1>
-        <p>Computer Science + Chemistry @ UIUC | Researcher & Developer</p>
-    </header>
+  <header>
+    <h1>Ronin Banerjee</h1>
+    <p>Computer Science + Chemistry @ UIUC | Researcher & Developer</p>
+  </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an undergraduate at the University of Illinois Urbana-Champaign pursuing a B.S. in Computer Science + Chemistry with a minor in Electrical & Computer Engineering. My work spans biomedical imaging, robotics, and machine learning, where I integrate computational and engineering approaches to solve real-world problems. Honors include Dean’s List, James Scholar, and Tau Beta Pi.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an undergraduate at the University of Illinois Urbana-Champaign pursuing a B.S. in Computer Science + Chemistry with a minor in Electrical & Computer Engineering. My work spans biomedical imaging, robotics, and machine learning, integrating computational and engineering approaches to solve real-world problems.</p>
+  </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
+  <section id="experience">
+    <h2>Experience</h2>
 
-        <div class="experience">
-            <h3>Chemical Imaging and Structures Laboratory – Beckman Institute</h3>
-            <p><strong>Undergraduate Research Intern</strong> | Jun 2025 – Present</p>
-            <ul>
-                <li>Assemble optical subsystems for spectroscopic microscopes, including beam paths and IR components for Mayo Clinic.</li>
-                <li>Develop control software for automated image capture and spectral processing.</li>
-                <li>Design electronics for microscope automation—PCB layout, microcontroller programming, signal routing.</li>
-            </ul>
-        </div>
+    <div class="experience">
+      <h3>Chemical Imaging and Structures Laboratory – Beckman Institute</h3>
+      <p><strong>Undergraduate Research Intern</strong> | Jun 2025 – Present</p>
+      <ul>
+        <li>Assembled optical subsystems for spectroscopic microscopes with IR components for Mayo Clinic.</li>
+        <li>Developed control software for automated image capture and spectral processing.</li>
+        <li>Designed electronics for microscope automation using PCB layout, microcontroller programming, and signal routing.</li>
+      </ul>
+    </div>
 
-        <div class="experience">
-            <h3>Rhanor Gillette Lab – University of Illinois</h3>
-            <p><strong>Research Assistant</strong> | Oct 2024 – Apr 2025</p>
-            <ul>
-                <li>Converted biological decision-making models from NetLogo to Python for robotic platform integration.</li>
-                <li>Ran computational experiments simulating neural-driven goal-directed behavior.</li>
-            </ul>
-        </div>
+    <div class="experience">
+      <h3>Molecular Biology Lab – University of Illinois</h3>
+      <p><strong>Research Assistant</strong> | Oct 2024 – Apr 2025</p>
+      <ul>
+        <li>Converted biological decision-making models from NetLogo to Python for robotic platform integration.</li>
+        <li>Simulated neural-driven goal-directed behavior and supported data visualization efforts.</li>
+      </ul>
+    </div>
 
-        <div class="experience">
-            <h3>Berkeley Pharma Tech – Remote</h3>
-            <p><strong>Medical Research Intern</strong> | Aug 2023 – Dec 2023</p>
-            <ul>
-                <li>Conducted literature reviews on neuroimaging and emerging therapies for addiction.</li>
-                <li>Analyzed trends and presented findings to research scientists.</li>
-            </ul>
-        </div>
+    <div class="experience">
+      <h3>Berkeley Pharma Tech – Remote</h3>
+      <p><strong>Medical Research Intern</strong> | Aug 2023 – Dec 2023</p>
+      <ul>
+        <li>Conducted literature reviews on neuroimaging and emerging therapies for addiction.</li>
+        <li>Analyzed trends and presented findings to research scientists.</li>
+      </ul>
+    </div>
 
-        <div class="experience">
-            <h3>ADMtronics – Remote</h3>
-            <p><strong>Medical Device Design Intern</strong> | Jun 2023 – Aug 2023</p>
-            <ul>
-                <li>Developed CAD models in SolidWorks for an electro-wound therapy medical device.</li>
-                <li>Designed a portable, battery-operated control unit integrating scientific modeling techniques.</li>
-            </ul>
-        </div>
+    <div class="experience">
+      <h3>ADMtronics – Remote</h3>
+      <p><strong>Medical Device Design Intern</strong> | Jun 2023 – Aug 2023</p>
+      <ul>
+        <li>Developed CAD models in SolidWorks for an electro-wound therapy medical device.</li>
+        <li>Designed a portable, battery-operated control unit integrating scientific modeling techniques.</li>
+      </ul>
+    </div>
 
-        <div class="experience">
-            <h3>Biogen & Lemelson MIT – Cambridge, MA</h3>
-            <p><strong>Biotech Research Intern</strong> | Aug 2020 – Sep 2020</p>
-            <ul>
-                <li>Participated in CRISPR-based genetic disease research and prototyping under Biogen and MIT scientists.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="experience">
+      <h3>Biogen & Lemelson MIT – Cambridge, MA</h3>
+      <p><strong>Biotech Research Intern</strong> | Aug 2020 – Sep 2020</p>
+      <ul>
+        <li>Participated in CRISPR-based genetic disease research and prototyping under Biogen and MIT scientists.</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  <section id="projects">
+    <h2>Projects</h2>
 
-        <div class="project">
-            <h3>Autonomous Navigation System for FTC Robot</h3>
-            <p>Developed vision-based path-planning algorithm using odometry, IMU, and PID control. Integrated OpenCV and multi-camera localization for precise autonomous movement.</p>
-        </div>
+    <div class="project">
+      <h3>Autonomous Navigation System for FTC Robot</h3>
+      <p>Vision-based path-planning algorithm using odometry, IMU, and PID control. Integrated OpenCV + multi-camera localization for precise autonomous movement.</p>
+    </div>
 
-        <div class="project">
-            <h3>Object Detection for Robotics</h3>
-            <p>Trained a TensorFlow model with custom preprocessing for real-time object detection. Integrated ML model with robotic control systems for adaptive, autonomous gameplay.</p>
-        </div>
+    <div class="project">
+      <h3>Object Detection for Robotics</h3>
+      <p>TensorFlow model trained with custom preprocessing for real-time object detection. Integrated with robotic control systems for adaptive gameplay.</p>
+    </div>
 
-        <div class="project">
-            <h3>DNA Splicing Tool</h3>
-            <p>C++ program simulating DNA splicing operations with linked lists and efficient dynamic memory management.</p>
-        </div>
+    <div class="project">
+      <h3>DNA Splicing Tool</h3>
+      <p>C++ program simulating DNA splicing operations with linked lists and efficient dynamic memory management.</p>
+    </div>
 
-        <div class="project">
-            <h3>Seam Carving Image Resizer</h3>
-            <p>Dynamic programming-based algorithm for content-aware image resizing while preserving important visual features.</p>
-        </div>
-    </section>
+    <div class="project">
+      <h3>Seam Carving Image Resizer</h3>
+      <p>Dynamic programming-based algorithm for content-aware image resizing while preserving important visual features.</p>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:roninb2@illinois.edu">roninb2@illinois.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ronin-banerjee">linkedin.com/in/ronin-banerjee</a></p>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:roninb2@illinois.edu">roninb2@illinois.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ronin-banerjee">linkedin.com/in/ronin-banerjee</a></p>
+  </section>
 
-    <footer>
-        &copy; 2025 Ronin Banerjee. All rights reserved.
-    </footer>
+  <footer>
+    &copy; 2025 Ronin Banerjee. All rights reserved.
+  </footer>
 </body>
 </html>
